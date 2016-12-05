@@ -2,15 +2,46 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>CODEAC_PROJ_008</title>
+<title>CODE ACADEMY WebUI Loading...</title>
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<script src="jQueryAssets/jquery-3.1.1.min.js"></script>
+<link href="animation_assets/animate.css" rel="stylesheet">
+<script src="jQueryAssets/jquery.lettering.js"></script>
+<script src="jQueryAssets/jquery.textillate.js"></script>
+
 </head>
 
 <body>
+<audio id="sfx_swich" preload="auto">
+<source src="sfx/meka_ge_swi01.mp3" type="audio/mp3">
+</audio>
+<audio id="sfx_pcnoize" preload="auto">
+<source src="sfx/meka_ge_pc01.mp3" type="audio/mp3">
+</audio>
+<audio id="sfx_beep" preload="auto">
+<source src="sfx/meka_ge_reji_pi02.mp3" type="audio/mp3">
+</audio>
+
+<div id="title">
+<p class="ef">CODE ACADEMY HIGH SCHOOL 第8回 一般公開発表作品 | Theme「公式学校ページREMAKE(演出/アニメーション効果重視)」</p>
+<p class="ef2">※ このサイトには効果音が設定されています。音声を聞き取れるデバイスを有効にしてから閲覧してください ※</p>
+</div>
+
+<script>
+$(function () {
+    $('.ef').textillate({in: {effect: 'fadeInDown'}});
+	$('.ef2').textillate({in: {effect: 'fadeInDown'}});
+	setTimeout(function(){$("#title").remove();},8000);
+	setTimeout(function(){document.getElementById("sfx_swich").play();},9000);
+	setTimeout(function(){document.getElementById("sfx_pcnoize").play();},9200);
+	setTimeout(function(){bootlogtxt();},9500);
+	setTimeout(function(){$("#bootlog").remove();},26500);
+	setTimeout(function(){document.getElementById("sfx_beep").play();},27000);
+	
+})
+</script>
 <script type="text/javascript" src="js/bootlog.js"></script>
 <script>
-window.onload = function(){
-bootlogtxt();
-}
 </script>
 <div id="bootlog"></div>
 </body>

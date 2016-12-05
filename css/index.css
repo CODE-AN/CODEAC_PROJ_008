@@ -1,0 +1,25 @@
+/*index_css*/
+body{
+	background-color: #000000;
+}
+
+div#bootlog{
+	color: #1A9437;
+}
+
+p.ef{
+	font-size: 30px;
+	text-align: center;
+	height: 500px;
+    line-height: 500px;
+	color: #1A9437;
+	font-style: oblique;
+}
+
+p.ef2{
+	font-size: 22px;
+	text-align: center;
+	height: 5px;
+    line-height: 5px;
+	color: #1A9437;
+}
