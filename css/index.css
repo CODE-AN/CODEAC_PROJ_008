@@ -144,11 +144,32 @@ p.ef2{
     bottom: 0;  
     left: 0;  
     width: 0%;
-    height: 100px; 
+    height: 100px;
     background:rgba(50,50,50,1);
 	animation:menu_open 2s ease both;
 	animation-delay: 58200ms;
 	z-index:100;
+	display: flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    justify-content: center;
+}
+
+.under_menu:before,
+.under_menu:after {
+    content: "";
+    display: table;
+}
+ 
+.under_menu:after {
+    clear: both;
+}
+ 
+/* For IE 6/7 (trigger hasLayout) */
+.under_menu {
+    zoom: 1;
 }
 
 @keyframes menu_open{
@@ -248,3 +269,41 @@ p.ef2{
 	background-color: #cfcfcf;
 }
 
+.button {
+	opacity: 0;
+	-webkit-transition: all 5s;
+    -moz-transition: all 5s;
+    -ms-transition: all 5s;
+    -o-transition: all 5s;
+    transition: all 5s;
+    width: 170px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 100px;
+    background-color: #666;
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+	visibility:hidden;
+}
+.button:hover {
+    background-color: #59b1eb;
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+}
+.button,
+.button::before,
+.button::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
