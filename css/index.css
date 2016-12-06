@@ -6,8 +6,20 @@
 	-ms-user-select: none;
 }
 
+html{
+	margin:0;
+	padding:0;
+}
+
 body{
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
 	background-color: #000000;
+	margin:0;
+  	padding:0;
+	overflow-y: hidden;
 }
 
 div#bootlog{
@@ -42,6 +54,7 @@ p.ef2{
         transform: perspective(500px) rotateY(360deg);
     }
 }
+
 .rolling{
 	-webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -104,6 +117,27 @@ p.ef2{
 	margin-top: 190px;
 }
 
+.top_header{
+    position: fixed !important;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background:rgba(50,50,50,0.5);
+    z-index:100;
+}
+
+.code_logo{
+    position: fixed !important;
+    position: absolute;
+    background: url('../img/codeac_namelogo.png');
+    background-repeat: no-repeat;
+    z-index:101;
+    width: 304px;
+    height: 100px;
+    left:50%;
+    margin-left:-152px;
+}
+
 .under_menu{
 	position: fixed !important;  
     position: absolute;  
@@ -114,6 +148,7 @@ p.ef2{
     background:rgba(50,50,50,1);
 	animation:menu_open 2s ease both;
 	animation-delay: 58200ms;
+	z-index:100;
 }
 
 @keyframes menu_open{
@@ -128,3 +163,88 @@ p.ef2{
 	}
 
 }
+
+*::before,
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.panel-in::before,
+.panel {
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.panel {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	visibility:hidden;
+	z-index:50;
+}
+.panel-in::before {
+    content: "";
+    position: absolute;
+    background-clip: content-box;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+.panel-in {
+    padding: 0px;
+    position: relative;
+}
+.panel-main {
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 40px;
+	padding-bottom: 100%;
+    z-index: 30;
+    position: relative;
+    margin-bottom: 0;
+    background: rgba(255,255,255,0.4);
+}
+
+.page_top{
+	text-align: center;
+    padding: 280px;
+    position: relative;
+    color: #FFFFFF;
+	visibility:hidden;
+	z-index:50;
+	text-shadow:
+	    -1px -1px #000,
+		1px -1px #000,
+		-1px 1px #000,
+		1px 1px #000;
+}
+
+.toppage{
+	opacity: 0;
+	-webkit-transition: all 5s;
+    -moz-transition: all 5s;
+    -ms-transition: all 5s;
+    -o-transition: all 5s;
+    transition: all 5s;
+}
+
+.loading_screen{
+	opacity: 1;
+	-webkit-transition: all 5s;
+    -moz-transition: all 5s;
+    -ms-transition: all 5s;
+    -o-transition: all 5s;
+    transition: all 5s;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index:70;
+	visibility:hidden;
+	background-color: #cfcfcf;
+}
+
