@@ -1,4 +1,11 @@
 /*index_css*/
+*{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
 body{
 	background-color: #000000;
 }
@@ -22,4 +29,71 @@ p.ef2{
 	height: 5px;
     line-height: 5px;
 	color: #1A9437;
+}
+
+@keyframes roll {
+    from {
+        transform: perspective(500px) rotateY(0deg);
+    }
+    50%{
+        transform: perspective(500px) rotateY(180deg);
+    }
+    to{
+        transform: perspective(500px) rotateY(360deg);
+    }
+}
+.rolling{
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    opacity: 1;
+	visibility:hidden;
+    animation: roll 5s linear infinite;
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+	margin-top: 120px;
+}
+
+.static_logo{
+	-webkit-transition: all 6s;
+    -moz-transition: all 6s;
+    -ms-transition: all 6s;
+    -o-transition: all 6s;
+    transition: all 6s;
+    opacity: 0;
+	visibility:hidden;
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+	margin-top: 120px;
+}
+
+.windows8{
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    opacity: 1;
+	visibility:hidden;
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+	margin-top: 70px;
+}
+.sys_msg01{
+	visibility:hidden;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 190px;
+}
+
+.sys_msg02{
+	visibility:hidden;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 190px;
 }

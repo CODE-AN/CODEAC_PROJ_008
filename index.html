@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>CODE ACADEMY WebUI Loading...</title>
+<title>コードアカデミー高等学校 | CODE ACADEMY HIGH SCHOOL(REMAKE)</title>
 <link rel="stylesheet" href="css/index.css" type="text/css">
 <script src="jQueryAssets/jquery-3.1.1.min.js"></script>
 <link href="animation_assets/animate.css" rel="stylesheet">
+<link href="animation_assets/win8_loading.css" rel="stylesheet">
 <script src="jQueryAssets/jquery.lettering.js"></script>
 <script src="jQueryAssets/jquery.textillate.js"></script>
 
@@ -37,12 +38,56 @@ $(function () {
 	setTimeout(function(){bootlogtxt();},9500);
 	setTimeout(function(){$("#bootlog").remove();},26500);
 	setTimeout(function(){document.getElementById("sfx_beep").play();},27000);
+	setTimeout(function(){$('.rolling').css('visibility','visible');},28200);
+	setTimeout(function(){$('body').css('background-color','#cfcfcf');},28200);
+	setTimeout(function(){$('.windows8').css('visibility','visible');},28200);
+	setTimeout(function(){$('.sys_msg01').css('visibility','visible');},28200);
+	setTimeout(function(){$('.sys_msg01').textillate({loop: false,minDisplayTime: 2500,in:{effect:'fadeInLeft'}, out: {effect:'fadeOutRight'}});},28201);
+	setTimeout(function(){$('.windows8').css('opacity','0');},51900);
+	setTimeout(function(){$('.rolling').css('opacity','0');},51900);
+	setTimeout(function(){$(".sys_msg01").remove();},53000);
+	setTimeout(function(){$(".windows8").remove();},53000);
+	setTimeout(function(){$('.rolling').remove();},53000);
+	setTimeout(function(){$('.static_logo').css('visibility','visible');},53100);
+	setTimeout(function(){$('.sys_msg02').css('visibility','visible');},53100);
+	setTimeout(function(){$('.static_logo').css('opacity','1');},53101);	
+	setTimeout(function(){$('.sys_msg02').textillate({loop: false,minDisplayTime: 2500,in:{effect:'fadeInLeftBig'}, out: {effect:'bounceOut'}});},53101);
 	
 })
 </script>
 <script type="text/javascript" src="js/bootlog.js"></script>
-<script>
-</script>
 <div id="bootlog"></div>
+<img class="rolling" src="img/codeac_logo.png">
+<div class="sys_msg01">
+    <ul class="texts">
+       <li>仮想環境と物理ネットワークの接続調整中...</li>   
+       <li>code.ac.jp@198.185.159.136へ接続中...</li>
+       <li>仮想環境に紐付けられているログイン情報を送信中...</li>
+       <li> </li>
+    </ul>
+</div>
+<div class="windows8">
+	<div class="wBall" id="wBall_1">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_2">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_3">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_4">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_5">
+		<div class="wInnerBall"></div>
+	</div>
+</div>
+<img class="static_logo" src="img/codeac_logo.png">
+<div class="sys_msg02">
+	<ul class="texts2">
+		<li>ようこそ 発表会参加者 の方々!</li>
+	</ul>
+</div>
 </body>
 </html>
