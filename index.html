@@ -52,7 +52,10 @@ $(function () {
 	setTimeout(function(){$('.sys_msg02').css('visibility','visible');},53100);
 	setTimeout(function(){$('.static_logo').css('opacity','1');},53101);	
 	setTimeout(function(){$('.sys_msg02').textillate({loop: false,minDisplayTime: 2500,in:{effect:'fadeInLeftBig'}, out: {effect:'bounceOut'}});},53101);
-	
+	setTimeout(function(){$('.static_logo').css('opacity','0');},57000);
+	setTimeout(function(){$('.sys_msg02').css('opacity','0');},57000);
+	setTimeout(function(){$('.static_logo').remove();},58000);
+	setTimeout(function(){$('.sys_msg02').remove();},58000);
 })
 </script>
 <script type="text/javascript" src="js/bootlog.js"></script>
@@ -89,5 +92,6 @@ $(function () {
 		<li>ようこそ 発表会参加者 の方々!</li>
 	</ul>
 </div>
+<div class="under_menu"></div>
 </body>
 </html>

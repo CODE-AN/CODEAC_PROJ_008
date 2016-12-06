@@ -50,7 +50,7 @@ p.ef2{
     transition: all 1s;
     opacity: 1;
 	visibility:hidden;
-    animation: roll 5s linear infinite;
+    animation: roll 5s ease infinite;
 	display: block;
  	margin-left: auto;
  	margin-right: auto;
@@ -58,11 +58,11 @@ p.ef2{
 }
 
 .static_logo{
-	-webkit-transition: all 6s;
-    -moz-transition: all 6s;
-    -ms-transition: all 6s;
-    -o-transition: all 6s;
-    transition: all 6s;
+	-webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
     opacity: 0;
 	visibility:hidden;
 	display: block;
@@ -92,8 +92,39 @@ p.ef2{
 }
 
 .sys_msg02{
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    opacity: 1;
 	visibility:hidden;
 	font-size: 22px;
 	text-align: center;
 	margin-top: 190px;
+}
+
+.under_menu{
+	position: fixed !important;  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 0%;
+    height: 100px; 
+    background:rgba(50,50,50,1);
+	animation:menu_open 2s ease both;
+	animation-delay: 58200ms;
+}
+
+@keyframes menu_open{
+	0% {
+		background:rgba(50,50,50,1);
+		width: 0%;
+	}
+
+	100% {
+		background:rgba(20,20,20,1);
+		width: 100%;
+	}
+
 }
