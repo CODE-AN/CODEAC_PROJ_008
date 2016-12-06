@@ -9,7 +9,8 @@
 <link href="animation_assets/win8_loading.css" rel="stylesheet">
 <script src="jQueryAssets/jquery.lettering.js"></script>
 <script src="jQueryAssets/jquery.textillate.js"></script>
-
+<script type="text/javascript" src="js/bootlog.js"></script>
+<script type="text/javascript" src="js/Movepage.js"></script>
 </head>
 
 <body>
@@ -56,20 +57,19 @@ $(function () {
 	setTimeout(function(){$('.sys_msg02').css('opacity','0');},57000);
 	setTimeout(function(){$('.static_logo').remove();},58000);
 	setTimeout(function(){$('.sys_msg02').remove();},58000);
+	setTimeout(function(){$('body').css('background-image','url(img/top_01.jpg)');},58500);
 	setTimeout(function(){$('.panel').css('visibility','visible');},58500);
 	setTimeout(function(){$('.page_top').css('visibility','visible');},58500);
-	setTimeout(function(){$('body').css('background-image','url(img/top_01.jpg)');},58500);
 	setTimeout(function(){$('body').css('overflow-y','visible');},58500);
 	setTimeout(function(){$('.loading_screen').css('visibility','visible');},58500);
 	setTimeout(function(){$('.loading_screen').css('opacity','0');},58501);
 	setTimeout(function(){$('.button').css('visibility','visible');},59999);
-	setTimeout(function(){$('.toppage').css('opacity','1');},60000);
+	setTimeout(function(){$('.Pagefream').css('opacity','1');},60000);
 	setTimeout(function(){$('.button').css('opacity','1');},60000);
 	
 	
 })
 </script>
-<script type="text/javascript" src="js/bootlog.js"></script>
 <div id="bootlog"></div>
 <img class="rolling" src="img/codeac_logo.png">
 <div class="sys_msg01">
@@ -103,16 +103,17 @@ $(function () {
 		<li>ようこそ 発表会参加者 の方々!</li>
 	</ul>
 </div>
+
 <div class="loading_screen"></div>
 
-<div class="toppage">
+<div class="Pagefream">
 <div class="top_header"></div>
 <div class="code_logo"></div>
 <div class="page_top"><h1>コードで、あなたの未来を描く。</h1></div>
 <div class="panel">
     	<div class="panel-in">
         	<div class="panel-main">
-           	    <h2>デジタルを学ぶ。デジタルで学ぶ。</h2>
+				<h2>デジタルを学ぶ。デジタルで学ぶ。</h2>
 				<h2>インターネットが大好きなあなたのための、通信制高校です。</h2><br>
 				学校法人信学会で新たな仲間と、インターネットを活用し自分のペースで高校卒業をめざします。<br>
 				<br>
@@ -129,14 +130,15 @@ $(function () {
 	</div>
 </div>
 
+
 <div class="under_menu">
-	<a class="button" href="#">トップ</a>
-	<a class="button" href="#">高校案内</a>
-	<a class="button" href="#">コード教育</a>
-	<a class="button" href="#">通信制高校とは</a>
-	<a class="button" href="#">最新情報</a>
-	<a class="button" href="#">寄付・サポート</a>
-	<a class="button" href="#">お問い合わせ</a>
+	<a class="button" href="#" onclick="moveto_top();">トップ</a>
+	<a class="button" href="#" onclick="moveto_guide();">高校案内</a>
+	<a class="button" href="#" onclick="">コード教育</a>
+	<a class="button" href="#" onclick="">通信制高校とは</a>
+	<a class="button" href="#" onclick="">最新情報</a>
+	<a class="button" href="#" onclick="">寄付・サポート</a>
+	<a class="button" href="#" onclick="">お問い合わせ</a>
 </div>
 </body>
 </html>
