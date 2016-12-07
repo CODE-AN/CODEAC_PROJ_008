@@ -3,6 +3,9 @@
 ##概要
 http://www.code.ac.jp/を「アニメーション/演出/デザイン」を重視した構成で再構築しなおしたwebページ作品。
 
+##本家
+http://www.code.ac.jp/
+
 ##動作確認ブラウザ
 Internet Explorer 11 | Mozilla Firefox 50.0.2
 
