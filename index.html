@@ -47,7 +47,6 @@ $(function () {
 	setTimeout(function(){$('.windows8').css('opacity','0');},51900);
 	setTimeout(function(){$('.rolling').css('opacity','0');},51900);
 	setTimeout(function(){$(".sys_msg01").remove();},53000);
-	setTimeout(function(){$(".windows8").remove();},53000);
 	setTimeout(function(){$('.rolling').remove();},53000);
 	setTimeout(function(){$('.static_logo').css('visibility','visible');},53100);
 	setTimeout(function(){$('.sys_msg02').css('visibility','visible');},53100);
@@ -62,10 +61,18 @@ $(function () {
 	setTimeout(function(){$('.page_top').css('visibility','visible');},58500);
 	setTimeout(function(){$('body').css('overflow-y','visible');},58500);
 	setTimeout(function(){$('.loading_screen').css('visibility','visible');},58500);
-	setTimeout(function(){$('.loading_screen').css('opacity','0');},58501);
-	setTimeout(function(){$('.button').css('visibility','visible');},59999);
-	setTimeout(function(){$('.Pagefream').css('opacity','1');},60000);
-	setTimeout(function(){$('.button').css('opacity','1');},60000);
+	setTimeout(function(){$('.windows8').css('position','absolute');},58499);
+	setTimeout(function(){$('.windows8').css('visibility','visible');},58500);
+	setTimeout(function(){$('.windows8').css('padding-left','48%');},58501);
+	setTimeout(function(){$('.windows8').css('padding-top','320px');},58501);
+	setTimeout(function(){$('.loading_screen').textillate({loop: true,minDisplayTime: 700,in:{effect:'fadeInLeft'},out: {effect:'fadeOutRight'}});},58501);
+	setTimeout(function(){$('.windows8').css('opacity','1');},58501);
+	setTimeout(function(){$('.panel-main').css('padding-bottom','24%');},58501);
+	setTimeout(function(){$('.loading_screen').css('opacity','0');},62000);
+	setTimeout(function(){$('.windows8').css('opacity','0');},62000);
+	setTimeout(function(){$('.button').css('visibility','visible');},63000);
+	setTimeout(function(){$('.Pagefream').css('opacity','1');},63001);
+	setTimeout(function(){$('.button').css('opacity','1');},63001);
 	
 	
 })
@@ -104,7 +111,7 @@ $(function () {
 	</ul>
 </div>
 
-<div class="loading_screen"></div>
+<div class="loading_screen">ページを読み込み中...</div>
 
 <div class="Pagefream">
 <div class="top_header"></div>
@@ -124,21 +131,24 @@ $(function () {
 				<br>
 				今はまったくプログラミングができなくても大丈夫。<br>
 				気のあう仲間と「進学に向け勉強してみたい」「インターネットやコンピュターを学んでみたい」<br>
-				新入生・転入生のみなさん、コードアカデミー高校であなたの未来を描いてみませんか。<br>
+				新入生・転入生のみなさん、コードアカデミー高校であなたの未来を描いてみませんか。<br><br>
+       			<a class="twitter-timeline" data-lang="ja" data-width="700" data-height="520" data-theme="dark" href="https://twitter.com/jp_code">Tweets by jp_code</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script><br><br><br><br>Create by「15BF2005／ayumu nakamura」2016 Preview build.
         	</div>
     	</div>
 	</div>
 </div>
 
-
 <div class="under_menu">
 	<a class="button" href="#" onclick="moveto_top();">トップ</a>
-	<a class="button" href="#" onclick="moveto_guide();">高校案内</a>
-	<a class="button" href="#" onclick="">コード教育</a>
-	<a class="button" href="#" onclick="">通信制高校とは</a>
-	<a class="button" href="#" onclick="">最新情報</a>
-	<a class="button" href="#" onclick="">寄付・サポート</a>
-	<a class="button" href="#" onclick="">お問い合わせ</a>
+	<a class="button" href="#" onclick="moveto_guide();">特色・入学案内</a>
+	<a class="button" href="#" onclick="moveto_schoolloc();">学園案内・施設</a>
+	<a class="button" href="#" onclick="moveto_parent();">保護者向け</a>
+	<a class="button" href="#" onclick="moveto_dream();">進学指導</a>
+	<a class="button" href="#" onclick="moveto_code();">コード教育</a>
+	<a class="button" href="#" onclick="moveto_study();">通信制高校とは</a>
+	<a class="button" href="#" onclick="moveto_news();">最新情報</a>
+	<a class="button" href="#" onclick="moveto_donor();">寄付・サポート</a>
+	<a class="button" href="#" onclick="moveto_contact();">お問い合わせ</a>
 </div>
 </body>
 </html>
