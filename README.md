@@ -1,7 +1,7 @@
 # コードアカデミー高等学校公式webサイト[Preview build REMAKE] Project
 
 ##概要
-http://www.code.ac.jp/を「アニメーション/演出/デザイン」を重視した構成で再構築しなおしたwebページ作品。
+「アニメーション/演出/デザイン」を重視した構成で再構築しなおしたwebページ作品。
 
 ##本家
 http://www.code.ac.jp/
