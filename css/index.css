@@ -119,6 +119,7 @@ p.ef2{
 }
 
 .top_header{
+	position: fixed !important;
 	-webkit-transition: all 3s;
     -moz-transition: all 3s;
     -ms-transition: all 3s;
@@ -135,6 +136,7 @@ p.ef2{
 }
 
 .code_logo{
+	position: fixed !important;
 	-webkit-transition: all 3s;
     -moz-transition: all 3s;
     -ms-transition: all 3s;
