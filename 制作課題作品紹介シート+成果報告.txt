@@ -63,6 +63,8 @@ Adobe Dreamweaver CC 2017
 ＊[16/12/08 02:14] - 欠落していた改行コードを挿入
 |
 ＊[16/12/08 19:02] - レイアウトを若干修正
+｜
+＊[17/02/07 00:02] - Webfont追加/LICENSEファイルに[SIL Open Font License]内容を追加|htmlコードの微調整
 ・工夫点
 ＊ページを開いたときから連続して再生されるアニメーション部分
 PCの電源を入れた時点からの画面動作をWeb上で簡易再現し、続いてログイン画面、更にそのままトップページへと推移するという
@@ -87,7 +89,8 @@ Windows10のタスクバーのデザインを元に作られたデザイン構�
 ＊CREDIT
 効果音:On-Jin ～音人～ | http://on-jin.com/ [独自ライセンス(LICENSEファイル参照)]
 CSS:文字アニメーションテンプレート:animate.css | https://daneden.github.io/animate.css/ [MIT]
-CSS:ローディングアニメーションテンプレート:CSS Load.net | http://www.webantena.net/css/ [Unknown]css3-loading-created-by-css-looadnet/ [MIT]
+CSS:ローディングアニメーションテンプレート:CSS Load.net | http://cssload.net/ [Unknown]
 js:jQuery.js | https://jquery.com/ [MIT]
 js:textillate.js | http://textillate.js.org/ [MIT]
-js:lettering.js |http://letteringjs.com/ [MIT]
+js:lettering.js | http://letteringjs.com/ [MIT]
+Webfont:Noto Sans Japanese | https://fonts.google.com/earlyaccess#Noto+Sans+Japanese [SIL Open Font License, 1.1]
